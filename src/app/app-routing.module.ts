@@ -9,14 +9,6 @@ import { DashbordComponent } from './pages/dashbord/dashbord.component';
 
 const routes: Routes = [
 
-  // {
-  //   path: 'pages',
-  //   component: PagesComponent,
-  //   loadChildren: () => import('./pages/pages.module')
-  //     .then( m => m.PagesModule ),
-  // },
-
-
   { path:'', redirectTo: '/dashboard', pathMatch: 'full' },
   { path:'**', component: NopagefoundComponent },
 

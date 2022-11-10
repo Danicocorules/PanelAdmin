@@ -24,6 +24,7 @@ export class BreadcrumbsComponent implements OnDestroy{
 
     ngOnDestroy(): void {
         this.getNameSubs.unsubscribe();
+        console.log('object');
     }
 
     getName() {

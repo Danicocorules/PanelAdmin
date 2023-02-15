@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService } from './../services/settings.service';
+
+declare function customInitFn(): any;
 
 @Component({
   selector: 'app-pages',
   templateUrl: './pages.component.html',
-  styleUrls: ['./pages.component.css']
 })
 export class PagesComponent implements OnInit {
 
-  constructor() { }
+
+  constructor( private settingsService: SettingsService ) { }
 
   ngOnInit(): void {
+    customInitFn();
   }
-
 }
